@@ -179,7 +179,7 @@ section{
 /*====INICIO====*/
 .inicio{
     display: flex;
-    border: 1px solid red;
+
 }
 
 .conteudo{
@@ -316,6 +316,8 @@ section{
 
     .conteudo{
         border-right:none;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid rgba(74, 97, 212, 0.1);
     }
     .inicio{
         z-index: 0;
