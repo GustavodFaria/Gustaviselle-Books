@@ -179,6 +179,7 @@ section{
 /*====INICIO====*/
 .inicio{
     display: flex;
+    border: 1px solid red;
 }
 
 .conteudo{
@@ -308,8 +309,9 @@ section{
         display: inline;
     }
 
-    .swip{
-        display: none;
+    .inicio{
+        display: flex;
+        flex-direction: column;
     }
 
     .conteudo{
