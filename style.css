@@ -97,15 +97,25 @@ section{
     align-items: center;
 }
 
-.area-logo span{
+.area-logo span.texto{
     cursor: pointer;
     font-size: .8rem;
     font-weight: var(--font-medium);
+    color: black;
     text-transform: uppercase;
+}
+
+.area-logo span.text-diferente{
+    text-transform: lowercase;
+    color: var(--first-color);
 }
 
 .area-logo .span-book{
     color: var(--first-color);
+    text-transform: uppercase;
+}
+.icon-dif{
+    color: var(--white);
 }
 
 .reverter{
@@ -163,8 +173,6 @@ section{
     position: relative;
     z-index: var(--z-fixed);
     background-color: var(--color-body);
-    border: 1px solid red;
-
 }
 
 
