@@ -7,8 +7,9 @@
 
         <!--icon-->
         <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
-        <!--Squiper-->
-        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+        <!--Swiper-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
         <!--Font awessome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -34,13 +35,13 @@
                                     <a href="" class="secreto">LOGIN</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="">HOME</a>
+                                    <a href="#home">HOME</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="">SOBRE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="">LANÇAMENTOS</a>
+                                    <a href="#desconto">DESCONTO DA SEMANA</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="">CONTATO</a>
@@ -68,36 +69,142 @@
 
         <section class="paralax">
             <h1>GUSTAVISELL<span class="paralax-dife">e</span>BOOKS</h1>
-            <q>A BIBLIOTECA QUE VOCÊ JÁ CONHECE NA PALMA DA SUA MÃO...<br>
-            - Gustavo de Faria</q>
+            <q>UMA BIBLIOTECA NA PALMA DA SUA MÃO</q>
         </section>
 
-        <section class="inicio">
+        <section class="inicio headline" id="home">
             <div class="conteudo">
-                <h1 class="title-inicio">Navegue & selecione e-books</h1>
-                <p class="text-inicio">
+                <h1 class="title-inicio tagline">Navegue & selecione e-books</h1>
+                <p class="text-inicio punchline">
                     Encontre os melhores e-books dos seus escritores favoritos, explore centenas de livros com todas as categorias possíveis e concorra a sorteios semanais.
                 </p>
-                <button class="btn-home">Explore agora</button>
+                <button class="btn-home botonline">Explore agora</button>
             </div>
 
             <div class="swip">
-                <img src="imagens/book-1.png" alt="">
-                <img src="imagens/book-2.png" alt="">
-                <img src="imagens/book-3.png" alt="">
-                <img src="imagens/book-4.png" alt="">
-                <img src="imagens/book-5.png" alt="">
-                <img src="imagens/book-6.png" alt="">
-                <img src="imagens/book-7.png" alt="">
-                <img src="imagens/book-8.png" alt="">
-                <img src="imagens/book-9.png" alt="">
-                <img src="imagens/book-10.png" alt="">
+                <img src="imagens/book-1.png" class="fila1">
+                <img src="imagens/book-2.png" class="fila1">
+                <img src="imagens/book-3.png" class="fila1">
+                <img src="imagens/book-4.png" class="fila1">
+                <img src="imagens/book-5.png" class="fila1">
+                <img src="imagens/book-6.png" class="fila2">
+                <img src="imagens/book-7.png" class="fila2">
+                <img src="imagens/book-8.png" class="fila2">
+                <img src="imagens/book-9.png" class="fila2">
+                <img src="imagens/book-10.png"class="fila2">
+            </div>      
+        </section>
+
+        <section class="desconto-area headline2" id="desconto">
+            <div class="desconto-section">
+                <h1 class="desconto-title">DESCONTOS DA SEMANA</h1>
+
+                <div class="area-desconto-livros">
+                        
+                        <div class="bloco-desconto livro1">
+                            <div class="conteudo-surpresa">
+                                <h4 class="title-livro-desconto-surpresa">INTERIOR IDEAL</h4>
+                                <p class="text-desconto-surpresa">"Guia prático de design de interior, perfeito para quem busca transformar espaços em ambientes acolhedores e funcionais."</p>
+    
+                                <p class="preço2-surpresa">R$39,90</p>
+    
+                                <button class="desconto-button">Adquirir</button>
+                            </div>
+
+                            <img src="imagens/discount-book-1.png" class="image-discount">
+
+                            <div class="conteudo-desconto">
+                                <h4 class="title-livro-desconto">INTERIOR IDEAL</h4>
+                                <p class="text-desconto">"Guia prático de design de interior, perfeito para quem busca transformar espaços em ambientes acolhedores e funcionais."</p>
+    
+                                <p class="preço1">R$89,90</p>
+                                <p class="preço2">R$39,90</p>
+                            </div>
+                        </div>
+    
+                        <div class="bloco-desconto livro2">
+                            <div class="conteudo-surpresa">
+                                <h4 class="title-livro-desconto-surpresa">CLASSIC BLUE</h4>
+                                <p class="text-desconto-surpresa">"Classic Blue é um livro de romance inglês que cativa os leitores. O enredo acompanha o tumultuado relacionamento entre dois protagonistas apaixonados."</p>
+    
+                                <p class="preço2-surpresa">R$69,90</p>
+    
+                                <button class="desconto-button">Adquirir</button>
+                            </div>
+
+                            <img src="imagens/discount-book-2.png" class="image-discount">
+
+                            <div class="conteudo-desconto">
+                                <h4 class="title-livro-desconto">CLASSIC BLUE</h4>
+                                <p class="text-desconto">"Classic Blue é um livro de romance inglês que cativa os leitores. O enredo acompanha o tumultuado relacionamento entre dois protagonistas apaixonados."</p>
+    
+                                <p class="preço1">R$189,90</p>
+                                <p class="preço2">R$69,90</p>
+                            </div>
+                        </div>
+    
+                        <div class="bloco-desconto livro3">
+                            <div class="conteudo-surpresa">
+                                <h4 class="title-livro-desconto-surpresa">DIANA & JACK</h4>
+                                <p class="text-desconto-surpresa">""Diana & Jack é um livro de aventura que traz uma emocionante jornada protagonizada pelos corajosos personagens Diana e Jack. Juntos, eles embarcam em uma série de desafios e perigos, explorando terras desconhecidas"."</p>
+    
+                                <p class="preço2-surpresa">R$19,90</p>
+    
+                                <button class="desconto-button">Adquirir</button>
+                            </div>
+
+                            <img src="imagens/home-book-1.png" class="image-discount">
+
+                            <div class="conteudo-desconto">
+                                <h4 class="title-livro-desconto">DIANA & JACK</h4>
+                                <p class="text-desconto">"Diana & Jack é um livro de aventura que traz uma emocionante jornada protagonizada pelos corajosos personagens Diana e Jack. Juntos, eles embarcam em uma série de desafios e perigos, explorando terras desconhecidas"</p>
+    
+                                <p class="preço1">R$49,90</p>
+                                <p class="preço2">R$19,90</p>
+                            </div>
+                        </div>
+    
+                        <div class="bloco-desconto livro4">
+                            <div class="conteudo-surpresa">
+                                <h4 class="title-livro-desconto-surpresa">CELTIC TALES</h4>
+                                <p class="text-desconto-surpresa">Contos Celtas é uma cativante saga de fantasia que se desenrola nas místicas terras celtas, onde antigas tradições e mitos ganham vida. No coração da história está um herói improvável, guiado por profecias ancestrais e dotado de poderes mágicos.</p>
+    
+                                <p class="preço2-surpresa">R$19,90</p>
+    
+                                <button class="desconto-button">Adquirir</button>
+                            </div>
+
+                            <img src="imagens/home-book-4.png" class="image-discount">
+
+                            <div class="conteudo-desconto">
+                                <h4 class="title-livro-desconto">CLASSIC BLUE</h4>
+                                <p class="text-desconto">Contos Celtas é uma saga de fantasia que se desenrola nas místicas terras celtas. No coração da história está um herói improvável, guiado por profecias ancestrais e dotado de poderes mágicos.</p>
+    
+                                <p class="preço1">R$189,90</p>
+                                <p class="preço2">R$69,90</p>
+                            </div>
+                        </div>
+    
+
+                </div>
+
+                
             </div>
         </section>
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>   
-        <script src="script.js"></script>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+     
+    <script src="script.js"></script>
     </body>
 </html>
