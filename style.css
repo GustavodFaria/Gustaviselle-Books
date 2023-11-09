@@ -54,7 +54,9 @@
     text-decoration: none;
     outline: none;
     list-style: none;
-    transition: .2s linear;
+    transition: .5s linear;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 body{
@@ -72,13 +74,27 @@ section{
     font-size: .5rem;
     background-color: #d9ddf2;
 }
+
+::-webkit-scrollbar{
+    height: .5rem;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color:transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--first-color);
+    border-radius: 5rem;
+}
 /*======CABEÇALHO=====*/
 
 .header{
     box-shadow: 5px 5px 10px #888888;
     padding: .5rem;
     position: relative;
-    z-index: var(--z-fixed);
+    z-index: 1000;
     background-color: var(--color-body);
     position: sticky;
     top: 0;
@@ -204,13 +220,13 @@ section.paralax{
 /* Animação do brilho */
 @keyframes glow {
   0% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    text-shadow: 0 10px 10px #4a61d4;
   }
   50% {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 10px 20px #4a61d4;
   }
   100% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    text-shadow: 0 10px 10px #4a61d4;
   }
 }
 
@@ -275,19 +291,219 @@ section.paralax{
 }
 
 
+/*==DESCONTO ==*/
+
+.desconto-area{
+    height: 45vh;
+    background-color: var(--white);
+    width: 99%;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.desconto-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desconto-title{
+    color: var(--first-color);
+    margin-bottom: 2rem;
+}
+
+.area-desconto-livros{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: .1rem;
+}
 
 
 
+.bloco-desconto{
+    padding: 1rem;
+    height: 28vh;
+    background-color: var(--color-body);
+    border-radius: .5rem;
+    width: 20rem;
+    display: flex;
+    position: relative;
+}
+
+
+.image-discount{
+    flex: 1;
+    margin-right: .2rem;
+}
+
+.bloco-desconto:hover{
+    background-color: var(--first-color);
+}
+
+.bloco-desconto:hover .image-discount {
+    transform: translatex(5%);
+}
+
+.conteudo-desconto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.bloco-desconto:hover .conteudo-desconto {
+    display: none;
+}
+
+
+.conteudo-surpresa{
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+    flex: 1;
+}
+
+.bloco-desconto:hover .conteudo-surpresa {
+    display: flex;
+}
+
+
+.conteudo-desconto-surpresa{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-livro-desconto{
+    text-transform: uppercase;
+    color: var(--first-color);
+}
+
+.title-livro-desconto-surpresa{
+    color: var(--white);
+}
+
+
+.text-desconto{
+    font-size: .6rem;
+}
+.text-desconto-surpresa{
+    font-size: .6rem;
+    color: var(--white);
+}
+
+.preço1{
+    font-size: .7rem;
+    color: var(--text-color);
+    text-decoration: line-through var(--text-color);
+}
+
+.preço2{
+    font-size: 1.5rem;
+    font-weight: 800rem;
+    color: var(--first-color);
+}
+
+.preço2-surpresa{
+    font-size: 1.5rem;
+    font-weight: 800rem;
+    color: var(--color-body);
+}
+
+.desconto-button{
+    text-transform: uppercase;
+    color: var(--first-color);
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: 300px;
+    padding: .2rem;
+}
+
+.desconto-button:hover{
+    color: white;
+    background-color: var(--first-color);
+    border: 1px solid var(--white);
+}
 
 /*====MEDIA====*/
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1350px){
     .conteudo .title-inicio{
         color: var(--title-color);
         font-family: var(--second-font);
         font-size: 3rem;
         margin-bottom: 3rem;
     }
+
+    .area-desconto-livros{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    .desconto-area{
+        height: 72vh;
+    }
+
+    .desconto-button{
+        text-transform: uppercase;
+        color: var(--first-color);
+        border: 1px solid transparent;
+        background-color: white;
+        border-radius: .5rem;
+        cursor: pointer;
+        padding: .1rem;
+    }
+    
+    .desconto-button:hover{
+        color: white;
+        background-color: var(--first-color);
+        border: 1px solid var(--white);
+    }
+    .preço2{
+        font-size: 1rem;
+        font-weight: 600rem;
+        color: var(--first-color);
+    }
+    
+    .preço2-surpresa{
+        font-size: 1rem;
+        font-weight: 600rem;
+        color: var(--color-body);
+    }
+    .preço1{
+        font-size: .5rem;
+    }
+    .text-desconto{
+        font-size: .6rem;
+    }
+    .text-desconto-surpresa{
+        font-size: .6rem;
+        color: var(--white);
+    }
+    .title-livro-desconto{
+        text-transform: uppercase;
+        color: var(--first-color);
+        font-size: .6rem;
+    }
+    
+    .title-livro-desconto-surpresa{
+        color: var(--white);
+        font-size: .6rem;
+    }
+    .image-discount{
+        width: 20%;
+        margin-right: .1rem;
+    }
+    
 }
 
 @media screen and (max-width: 968px){
@@ -310,6 +526,17 @@ section.paralax{
     }
 }
 
+@media screen and (max-width: 800px){
+    .bloco-desconto{
+        padding: 1rem;
+        height: 28vh;
+        background-color: var(--color-body);
+        border-radius: .5rem;
+        width: 15rem;
+        display: flex;
+        position: relative;
+    }
+}
 
 
 @media screen and (max-width: 768px){
@@ -367,5 +594,13 @@ section.paralax{
     }
     section.paralax{
         height: 60vh;
+    }
+    .desconto-area{
+        height: 73vh;
+    }
+}
+@media screen and (max-width: 621px){
+    .desconto-area{
+        height: 135vh;
     }
 }
