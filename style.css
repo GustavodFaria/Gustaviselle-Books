@@ -175,11 +175,48 @@ section{
     background-color: var(--color-body);
 }
 
+/*==PARALAX==*/
+
+section.paralax{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('imagens/abundant-collection-antique-books-wooden-shelves-generated-by-ai.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.paralax h1, .paralax q{
+    color: var(--white);
+    font-weight: 900;
+ text-shadow: 0 0 10px rgba(255, 255, 255, 1); /* Efeito de sombra brilhante */
+  animation: glow 1.5s ease-in-out infinite; /* Animação do brilho */
+}
+
+.paralax h1{
+    margin-bottom: 1rem;
+}
+
+/* Animação do brilho */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  }
+}
 
 /*====INICIO====*/
 .inicio{
     display: flex;
-
 }
 
 .conteudo{
@@ -230,11 +267,10 @@ section{
 
 .swip img{
     width: 20%;
-    gap: 1rem;
 }
 
 .swip img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     overflow: hidden;
 }
 
@@ -267,6 +303,10 @@ section{
         font-family: var(--second-font);
         font-size: 1.5rem;
         margin-bottom: 3rem;
+    }
+
+    section.paralax{
+        height: 80vh;
     }
 }
 
@@ -324,5 +364,8 @@ section{
     }
     .text-inicio{
         margin-bottom: 3rem;
+    }
+    section.paralax{
+        height: 60vh;
     }
 }
