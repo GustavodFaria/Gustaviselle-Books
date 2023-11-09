@@ -54,7 +54,7 @@
     text-decoration: none;
     outline: none;
     list-style: none;
-    transition: .5s linear;
+    transition: .3s linear;
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
 }
