@@ -476,16 +476,16 @@ section.paralax{
     color: var(--color-body);
     margin-bottom: 1rem;
 }
-.resumo-best{
+.resumo-best, .resumo-best2{
     color: var(--color-body);
 }
 
 .ultimo{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .detalhes-livro{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .lista-item-livro{
     color: var(--color-body);
@@ -510,9 +510,29 @@ section.paralax{
 }
 
 
+.img-carro{
+    display: flex;
+    width: 80%;
+}
+
+.book1-best{
+    display: flex;
+}
+
+.book2-best{
+    display: none;
+}
+
+.fa-left-long, .fa-right-long{
+    cursor: pointer;
+    color: var(--first-color);
+}
 
 
 
+.lista-info2{
+    display: none;
+}
 
 
 /*====MEDIA====*/
@@ -600,7 +620,7 @@ section.paralax{
         font-size: 3rem;
     }
 
-    .resumo-best{
+    .resumo-best, .resumo-best2{
         color: var(--color-body);
         font-size: .8rem;
     }
@@ -640,7 +660,7 @@ section.paralax{
         font-size: 2rem;
     }
 
-    .resumo-best{
+    .resumo-best, .resumo-best2{
         font-size: .6rem;
     }
     .lista-item-livro{
@@ -926,7 +946,7 @@ section.paralax{
         font-size: .3rem;
 
     }
-    .resumo-best{
+    .resumo-best, .resumo-best2{
         font-size: .5rem;
     }
     .ultimo{
@@ -942,6 +962,7 @@ section.paralax{
     }
 
     .conteudo-best{
-        padding: 1.2rem;
+        padding: 1rem;
+
     }
 }
