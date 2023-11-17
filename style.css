@@ -60,7 +60,8 @@
 }
 
 body{
-    background-color: var(--color-body)
+    background-color: var(--color-body);
+    position: relative;
 }
 
 section{
@@ -335,6 +336,7 @@ section.paralax{
 
 .image-discount{
     flex: 1;
+    margin-right: 1rem;
 }
 
 .bloco-desconto:hover{
@@ -431,10 +433,84 @@ section.paralax{
 }
 
 
-
-
-
 /*==catalogo==*/
+
+.livros-venda-area{
+    display: flex;
+    flex-direction: column;
+}
+.best-seler-area{
+    display: flex;
+    justify-content: center;
+}
+
+
+.img-best{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-libro-best{
+    width: 100%;
+}
+
+.conteudo-best{
+    flex: 3;
+    background-color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.title-best{
+    color: var(--first-color);
+    font-size: 1rem;
+}
+
+.title-livro-best{
+    font-size: var(--h3-font-size);
+    color: var(--color-body);
+    margin-bottom: 1rem;
+}
+.resumo-best{
+    color: var(--color-body);
+}
+
+.ultimo{
+    margin-bottom: 2rem;
+}
+
+.detalhes-livro{
+    margin-bottom: 2rem;
+}
+.lista-item-livro{
+    color: var(--color-body);
+}
+
+.preço-best{
+    color: var(--color-body);
+    font-size: 4rem;
+}
+
+.img-libro-best {
+    animation: onda 1.5s infinite alternate;
+}
+
+@keyframes onda {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+
+
 
 
 
@@ -511,6 +587,27 @@ section.paralax{
         margin-right: .1rem;
     }
     
+    .ultimo{
+        margin-bottom: 1.8rem;
+    }
+    
+    .detalhes-livro{
+        margin-bottom: 1.8rem;
+    }
+    
+    .preço-best{
+        color: var(--color-body);
+        font-size: 3rem;
+    }
+
+    .resumo-best{
+        color: var(--color-body);
+        font-size: .8rem;
+    }
+    .title-best{
+        font-size: .8rem;
+        margin-bottom: .5rem;
+    }
 }
 
 @media screen and (max-width: 968px){
@@ -531,17 +628,42 @@ section.paralax{
     section.paralax{
         height: 80vh;
     }
+    .ultimo{
+        margin-bottom: 1.5rem;
+    }
+    
+    .detalhes-livro{
+        margin-bottom: 1.5rem;
+    }
+    
+    .preço-best{
+        font-size: 2rem;
+    }
+
+    .resumo-best{
+        font-size: .6rem;
+    }
+    .lista-item-livro{
+        font-size: .6rem;
+    }
+    .title-best{
+        font-size: .5rem;
+        margin-bottom: .5rem;
+    }
+    
+    .title-livro-best{
+        font-size: .8rem;
+        color: var(--color-body);
+        margin-bottom: .5rem;
+    }
 }
 
 @media screen and (max-width: 800px){
     .bloco-desconto{
-        padding: 1rem;
-        height: 28vh;
-        background-color: var(--color-body);
-        border-radius: .5rem;
-        width: 15rem;
-        display: flex;
-        position: relative;
+        width: 48%;
+    }
+    .image-discount{
+        margin-right: 1rem;
     }
 }
 
@@ -554,7 +676,6 @@ section.paralax{
     #menu-btn{
         display: block;
     }
-
 
 
     .navbar-list{
@@ -605,9 +726,50 @@ section.paralax{
     .desconto-area{
         height: 73vh;
     }
+    
+    .best-seler-area{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .img-best{
+        width: 40%;
+        margin: 0 auto;
+    }
+    .img-libro-best{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .preço-best{
+        font-size: 1.2rem;
+    }
+
+    .lista-item-livro{
+        font-size: .5rem;
+
+    }
+    .title-best{
+        font-size: 1rem;
+        margin-bottom: .3rem;
+        margin-left: 1rem;
+    }
+    
+    .title-livro-best{
+        font-size: .8rem;
+        color: var(--color-body);
+        margin-bottom: .3rem;
+    }
 }
 
 @media screen and (max-width: 621px){
+    .area-desconto-livros{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .1rem;
+    }
     .desconto-area{
         height: 65vh;
         padding: .5rem;
@@ -619,13 +781,6 @@ section.paralax{
         margin-right: auto;
     }
     
-    .area-desconto-livros{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: .1rem;
-    }
     
     .bloco-desconto{
         padding: 1rem;
@@ -696,9 +851,16 @@ section.paralax{
         color: var(--white);
         font-size: .8rem;
     }  
+    .title-best{
+        font-size: .5rem;
+    }
+
 }
 
 @media screen and (max-width: 420px){
+    .desconto-area{
+        height: 62vh;
+    }
     .area-desconto-livros{
         gap: .3rem;
     }
@@ -707,7 +869,8 @@ section.paralax{
     }
     
     .desconto-title{
-        margin-bottom: .5rem;
+        margin-bottom: .1rem;
+        font-size: 1rem;
     }
 
     
@@ -726,4 +889,59 @@ section.paralax{
         margin-bottom: .3rem;
     }
 
+}
+
+@media screen and (max-width: 280px){
+    
+    .preço2{
+        font-size: 1rem;
+        font-weight: 800rem;
+        color: var(--first-color);
+    }
+    
+    .preço2-surpresa{
+        font-size: .8rem;
+        margin-bottom: .2rem;
+    }
+    .title-livro-desconto{
+        font-size: .5rem;
+    }
+    .title-livro-desconto-surpresa{
+        font-size: .5rem;
+    }
+    .title-best{
+        font-size: .3rem;
+        margin-left: .5rem;
+    }
+    .title-livro-best{
+        font-size: .5rem;
+        color: var(--color-body);
+        margin-bottom: .3rem;
+    }
+    .preço-best{
+        font-size: 1rem;
+    }
+
+    .lista-item-livro{
+        font-size: .3rem;
+
+    }
+    .resumo-best{
+        font-size: .5rem;
+    }
+    .ultimo{
+        margin-bottom: .6rem;
+    }
+    
+    .detalhes-livro{
+        margin-bottom: .5rem;
+    }
+
+    .paralax h1{
+        font-size: var(--h2-font-size);
+    }
+
+    .conteudo-best{
+        padding: 1.2rem;
+    }
 }
