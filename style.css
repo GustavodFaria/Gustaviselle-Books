@@ -89,12 +89,12 @@ section{
     background-color: var(--first-color);
     border-radius: 5rem;
 }
+
 /*======CABEÇALHO=====*/
 
 .header{
     box-shadow: 5px 5px 10px #888888;
     padding: .5rem;
-    position: relative;
     z-index: 1000;
     background-color: var(--color-body);
     position: sticky;
@@ -127,22 +127,11 @@ section{
     color: var(--first-color);
 }
 
-.area-logo .span-book{
-    color: var(--first-color);
-    text-transform: uppercase;
-}
-.icon-dif{
-    color: var(--white);
-}
-
 .reverter{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-}
-.area-nav{
-    display: flex;
 }
 
 .navbar-list{
@@ -150,7 +139,7 @@ section{
 }
 
 .nav-item{
-    margin: 0px 1rem;
+    margin: 0px .8rem;
 }
 
 .navbar-list li a{
@@ -186,11 +175,7 @@ section{
     display: none;
 }
 
-.inicio{
-    position: relative;
-    z-index: var(--z-fixed);
-    background-color: var(--color-body);
-}
+
 
 /*==PARALAX==*/
 
@@ -203,43 +188,27 @@ section.paralax{
     background-image: url('imagens/abundant-collection-antique-books-wooden-shelves-generated-by-ai.jpg');
     background-position: center;
     background-size: cover;
-    overflow: hidden;
     background-attachment: fixed;
 }
 
 .paralax h1, .paralax q{
     color: var(--white);
     font-weight: 900;
- text-shadow: 0 0 10px rgba(255, 255, 255, 1); /* Efeito de sombra brilhante */
-  animation: glow 1.5s ease-in-out infinite; /* Animação do brilho */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1); /* Efeito de sombra brilhante */
+    margin: .5rem 0;
 }
 
-.paralax h1{
-    margin-bottom: 1rem;
-}
-
-/* Animação do brilho */
-@keyframes glow {
-  0% {
-    text-shadow: 0 10px 10px #4a61d4;
-  }
-  50% {
-    text-shadow: 0 10px 20px #4a61d4;
-  }
-  100% {
-    text-shadow: 0 10px 10px #4a61d4;
-  }
-}
 
 /*====INICIO====*/
 .inicio{
     display: flex;
+    background-color: var(--color-body);
 }
 
 .conteudo{
     border-right: 2px solid rgba(74, 97, 212, 0.1);
     flex: 1;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -249,15 +218,13 @@ section.paralax{
 .conteudo .title-inicio{
     color: var(--title-color);
     font-family: var(--second-font);
-    font-size: 4rem;
-    margin-bottom: 5rem;
+    font-size: 3.5rem;
 }
 
 .text-inicio{
     font-size: var(--small-font-size);
     font-family: var(--second-font);
     color: var(--text-color);
-    margin-bottom: 5rem;
 }
 
 
@@ -266,7 +233,6 @@ section.paralax{
     border: none;
     background-color: var(--first-color);
     color: var(--white);
-    text-transform: uppercase;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -274,6 +240,10 @@ section.paralax{
 .btn-home:hover{
     color: var(--first-color);
     background-color: var(--white);
+}
+
+.conteudo .title-inicio, .text-inicio, .btn-home{
+    margin: 2.5rem 0;
 }
 
 .swip{
@@ -288,14 +258,13 @@ section.paralax{
 
 .swip img:hover{
     transform: scale(1.1);
-    overflow: hidden;
 }
 
 
 /*==DESCONTO ==*/
 
 .desconto-area{
-    height: 45vh;
+    height: 25rem;
     background-color: var(--white);
     width: 99%;
     border-radius: 2rem;
@@ -317,20 +286,16 @@ section.paralax{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: .1rem;
+    justify-content: space-between;
 }
 
-
-
 .bloco-desconto{
-    padding: 1rem;
-    height: 28vh;
+    padding: .5rem;
+    height: 15rem;
     background-color: var(--color-body);
     border-radius: .5rem;
     width: 20rem;
     display: flex;
-    position: relative;
 }
 
 
@@ -339,44 +304,19 @@ section.paralax{
     margin-right: 1rem;
 }
 
-.bloco-desconto:hover{
-    background-color: var(--first-color);
-}
-
-.bloco-desconto:hover .image-discount {
-    transform: translatex(5%);
-}
-
 .conteudo-desconto{
-    flex: 1;
     display: flex;
+}
+
+.conteudo-desconto, .conteudo-surpresa{
+    flex: 1;
     flex-direction: column;
     justify-content: space-around;
-}
-
-
-.bloco-desconto:hover .conteudo-desconto {
-    display: none;
 }
 
 
 .conteudo-surpresa{
-    flex-direction: column;
-    justify-content: space-around;
     display: none;
-    flex: 1;
-}
-
-.bloco-desconto:hover .conteudo-surpresa {
-    display: flex;
-}
-
-
-.conteudo-desconto-surpresa{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .title-livro-desconto{
@@ -403,15 +343,15 @@ section.paralax{
     text-decoration: line-through var(--text-color);
 }
 
-.preço2{
+.preço2, .preço2-surpresa{
     font-size: 1.5rem;
     font-weight: 800rem;
-    color: var(--first-color);
 }
 
+.preço2{
+    color: var(--first-color);
+}
 .preço2-surpresa{
-    font-size: 1.5rem;
-    font-weight: 800rem;
     color: var(--color-body);
 }
 
@@ -422,7 +362,6 @@ section.paralax{
     background-color: white;
     border-radius: .5rem;
     cursor: pointer;
-    font-weight: 300px;
     padding: .2rem;
 }
 
@@ -433,28 +372,41 @@ section.paralax{
 }
 
 
+.bloco-desconto:hover .conteudo-surpresa {
+    display: flex;
+}
+
+.bloco-desconto:hover .conteudo-desconto {
+    display: none;
+}
+
+.bloco-desconto:hover{
+    background-color: var(--first-color);
+}
+
+.bloco-desconto:hover .image-discount {
+    transform: translatex(5%);
+}
+
 /*==catalogo==*/
 
-.livros-venda-area{
-    display: flex;
-    flex-direction: column;
-}
 .best-seler-area{
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
 
 .img-best{
     flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 .img-libro-best{
-    width: 100%;
+    width: 90%;
 }
 
 .conteudo-best{
@@ -480,13 +432,10 @@ section.paralax{
     color: var(--color-body);
 }
 
-.ultimo{
+.ultimo, .detalhes-livro{
     margin-bottom: 3rem;
 }
 
-.detalhes-livro{
-    margin-bottom: 3rem;
-}
 .lista-item-livro{
     color: var(--color-body);
 }
@@ -505,22 +454,13 @@ section.paralax{
         transform: translateY(0);
     }
     100% {
-        transform: translateY(5px);
+        transform: translateY(.5rem);
     }
 }
 
 
-.img-carro{
-    display: flex;
-    width: 80%;
-}
-
 .book1-best{
     display: flex;
-}
-
-.book2-best{
-    display: none;
 }
 
 .fa-left-long, .fa-right-long{
@@ -528,441 +468,40 @@ section.paralax{
     color: var(--first-color);
 }
 
-
-
+.book2-best{
+    display: none;
+}
 .lista-info2{
     display: none;
 }
 
 
-/*====MEDIA====*/
+/*===REVIEW===*/
 
-@media screen and (max-width: 1350px){
-    .conteudo .title-inicio{
-        color: var(--title-color);
-        font-family: var(--second-font);
-        font-size: 3rem;
-        margin-bottom: 3rem;
-    }
-
-    .area-desconto-livros{
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 1rem;
-    }
-    .desconto-area{
-        height: 72vh;
-    }
-
-    .desconto-button{
-        text-transform: uppercase;
-        color: var(--first-color);
-        border: 1px solid transparent;
-        background-color: white;
-        border-radius: .5rem;
-        cursor: pointer;
-        padding: .1rem;
-    }
-    
-    .desconto-button:hover{
-        color: white;
-        background-color: var(--first-color);
-        border: 1px solid var(--white);
-    }
-    .preço2{
-        font-size: 1rem;
-        font-weight: 600rem;
-        color: var(--first-color);
-    }
-    
-    .preço2-surpresa{
-        font-size: 1rem;
-        font-weight: 600rem;
-        color: var(--color-body);
-    }
-    .preço1{
-        font-size: .5rem;
-    }
-    .text-desconto{
-        font-size: .6rem;
-    }
-    .text-desconto-surpresa{
-        font-size: .6rem;
-        color: var(--white);
-    }
-    .title-livro-desconto{
-        text-transform: uppercase;
-        color: var(--first-color);
-        font-size: .6rem;
-    }
-    
-    .title-livro-desconto-surpresa{
-        color: var(--white);
-        font-size: .6rem;
-    }
-    .image-discount{
-        width: 20%;
-        margin-right: .1rem;
-    }
-    
-    .ultimo{
-        margin-bottom: 1.8rem;
-    }
-    
-    .detalhes-livro{
-        margin-bottom: 1.8rem;
-    }
-    
-    .preço-best{
-        color: var(--color-body);
-        font-size: 3rem;
-    }
-
-    .resumo-best, .resumo-best2{
-        color: var(--color-body);
-        font-size: .8rem;
-    }
-    .title-best{
-        font-size: .8rem;
-        margin-bottom: .5rem;
-    }
+.review-slide .slide{
+    width: 35rem;
+    border-radius: .5rem;
+    background-color: yellow;
+    padding: 2rem;
+    margin-bottom: 4rem;
 }
 
-@media screen and (max-width: 968px){
-    .nav-item{
-        margin: 0px .5rem;
-    }
-    .navbar-list li a{
-        font-weight: var(--font-medium);
-        font-size: .8rem;
-    }
-    .conteudo .title-inicio{
-        color: var(--title-color);
-        font-family: var(--second-font);
-        font-size: 1.5rem;
-        margin-bottom: 3rem;
-    }
-
-    section.paralax{
-        height: 80vh;
-    }
-    .ultimo{
-        margin-bottom: 1.5rem;
-    }
-    
-    .detalhes-livro{
-        margin-bottom: 1.5rem;
-    }
-    
-    .preço-best{
-        font-size: 2rem;
-    }
-
-    .resumo-best, .resumo-best2{
-        font-size: .6rem;
-    }
-    .lista-item-livro{
-        font-size: .6rem;
-    }
-    .title-best{
-        font-size: .5rem;
-        margin-bottom: .5rem;
-    }
-    
-    .title-livro-best{
-        font-size: .8rem;
-        color: var(--color-body);
-        margin-bottom: .5rem;
-    }
+.review-slide .slide p{
+    line-height: 2;
+    font-size: 1rem;
+    color: green;
 }
 
-@media screen and (max-width: 800px){
-    .bloco-desconto{
-        width: 48%;
-    }
-    .image-discount{
-        margin-right: 1rem;
-    }
+.review-slide .slide .user{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-
-@media screen and (max-width: 768px){
-    .flex{
-        flex-direction: row-reverse;
-    }
-
-    #menu-btn{
-        display: block;
-    }
-
-
-    .navbar-list{
-        flex-direction: column;
-        position: absolute;
-        top: 100%; left: 0; right: 0;
-        align-items: center;
-        justify-content: center;
-        background: var(--color-body);
-        clip-path: inset(0 0 100% 0);
-        border-top: .4rem solid var(--container-color);
-        border-bottom: .4rem solid var(--container-color);
-    }
-
-    .navbar-list.active{
-        clip-path: inset(0 0 0 0);
-    }
-
-    .icon-area i{
-        display: none;
-    }
-    .navbar-list li{
-        margin: .5rem 0;
-    }
-    .secreto{
-        display: inline;
-    }
-
-    .inicio{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .conteudo{
-        border-right:none;
-        margin-bottom: 2rem;
-        border-bottom: 2px solid rgba(74, 97, 212, 0.1);
-    }
-    .inicio{
-        z-index: 0;
-    }
-    .text-inicio{
-        margin-bottom: 3rem;
-    }
-    section.paralax{
-        height: 60vh;
-    }
-    .desconto-area{
-        height: 73vh;
-    }
-    
-    .best-seler-area{
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .img-best{
-        width: 40%;
-        margin: 0 auto;
-    }
-    .img-libro-best{
-        margin: 0 auto;
-        width: 70%;
-    }
-
-    .preço-best{
-        font-size: 1.2rem;
-    }
-
-    .lista-item-livro{
-        font-size: .5rem;
-
-    }
-    .title-best{
-        font-size: 1rem;
-        margin-bottom: .3rem;
-        margin-left: 1rem;
-    }
-    
-    .title-livro-best{
-        font-size: .8rem;
-        color: var(--color-body);
-        margin-bottom: .3rem;
-    }
+.review-slide .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-@media screen and (max-width: 621px){
-    .area-desconto-livros{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: .1rem;
-    }
-    .desconto-area{
-        height: 65vh;
-        padding: .5rem;
-    }
-    
-    .desconto-title{
-        margin-bottom: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    
-    .bloco-desconto{
-        padding: 1rem;
-        height: 28vh;
-        background-color: var(--color-body);
-        border-radius: .5rem;
-        width: 49.8%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    
-    .image-discount{
-        width: 5rem;
-        margin: 0 auto;
-        order: 0;
-        height: 8rem;
-    }
-    
-    .bloco-desconto:hover{
-        background-color: var(--first-color);
-    }
-    
-    .bloco-desconto:hover .image-discount {
-        transform: none;
-    }
-    
-    .bloco-desconto:hover .conteudo-surpresa {
-        display: flex;
-        order: 1;
-    }
-
-
-    .text-desconto-surpresa{
-        font-size: .6rem;
-        color: var(--white);
-    }
-    
-    .preço2{
-        font-size: 1.5rem;
-        font-weight: 800rem;
-        color: var(--first-color);
-    }
-    
-    .preço2-surpresa{
-        font-size: 1.5rem;
-        margin-bottom: .3rem;
-    }
-    .text-desconto{
-        font-size: 0;
-    }
-    .text-desconto-surpresa{
-        font-size: 0;
-        color: var(--white);
-    }
-    .preço1{
-        font-size: 0;
-        color: var(--text-color);
-        text-decoration: line-through var(--text-color);
-    }
-    .title-livro-desconto{
-        text-transform: uppercase;
-        color: var(--first-color);
-        font-size: .8rem;
-    }
-    
-    .title-livro-desconto-surpresa{
-        color: var(--white);
-        font-size: .8rem;
-    }  
-    .title-best{
-        font-size: .5rem;
-    }
-
-}
-
-@media screen and (max-width: 420px){
-    .desconto-area{
-        height: 62vh;
-    }
-    .area-desconto-livros{
-        gap: .3rem;
-    }
-    .desconto-area{
-        padding: .2rem;
-    }
-    
-    .desconto-title{
-        margin-bottom: .1rem;
-        font-size: 1rem;
-    }
-
-    
-    .bloco-desconto{
-        width: 45%;
-    }
-    
-    .preço2{
-        font-size: 1.5rem;
-        font-weight: 800rem;
-        color: var(--first-color);
-    }
-    
-    .preço2-surpresa{
-        font-size: 1.2rem;
-        margin-bottom: .3rem;
-    }
-
-}
-
-@media screen and (max-width: 280px){
-    
-    .preço2{
-        font-size: 1rem;
-        font-weight: 800rem;
-        color: var(--first-color);
-    }
-    
-    .preço2-surpresa{
-        font-size: .8rem;
-        margin-bottom: .2rem;
-    }
-    .title-livro-desconto{
-        font-size: .5rem;
-    }
-    .title-livro-desconto-surpresa{
-        font-size: .5rem;
-    }
-    .title-best{
-        font-size: .3rem;
-        margin-left: .5rem;
-    }
-    .title-livro-best{
-        font-size: .5rem;
-        color: var(--color-body);
-        margin-bottom: .3rem;
-    }
-    .preço-best{
-        font-size: 1rem;
-    }
-
-    .lista-item-livro{
-        font-size: .3rem;
-
-    }
-    .resumo-best, .resumo-best2{
-        font-size: .5rem;
-    }
-    .ultimo{
-        margin-bottom: .6rem;
-    }
-    
-    .detalhes-livro{
-        margin-bottom: .5rem;
-    }
-
-    .paralax h1{
-        font-size: var(--h2-font-size);
-    }
-
-    .conteudo-best{
-        padding: 1rem;
-
-    }
-}
