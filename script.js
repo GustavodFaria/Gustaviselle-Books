@@ -7,6 +7,7 @@ function menuBar(){
     btnNav.classList.toggle('fa-times')
     listaNav.classList.toggle('active')
 }
+
 }
 
 ScrollReveal().reveal('.headline', { delay: 300 });
@@ -44,9 +45,9 @@ function trocarImagem(direcao) {
         livro1.style.display = 'block';
         livro2.style.display = 'none';
         titleBest.textContent = 'MEMÓRIAS DA ESPADA'
-        prUm.textContent = '"Memória da Espada" é uma envolvente jornada através de um mundo repleto de intriga, honra e aventura. Escrito com maestria por Stephen King, este livro transporta os leitores para um universo onde as lâminas contam histórias e os guerreiros carregam o peso de suas memórias.'
-        prDois.textContent = 'Na trama, somos apresentados a Eren Tagaryen, um destemido guerreiro cujo destino se entrelaça com segredos ancestrais e um artefato lendário: a espada Vralines. À medida que a história se desenrola, descobrimos os mistérios enterrados no passado de Eren, enquanto ele embarca em uma jornada épica para desvendar o poder e o propósito dessa arma única.'
-        prTres.textContent = 'A narrativa habilmente mescla elementos de fantasia e emoção, mergulhando os leitores em batalhas épicas, alianças improváveis e reviravoltas surpreendentes. O mundo meticulosamente construído por tephené habitado por personagens complexos e cativantes, cada um contribuindo para a trama de maneiras que desafiam as expectativas.'
+        prUm.textContent = '"Memória da Espada" é uma envolvente jornada através de um mundo repleto de intriga, honra e aventura. Escrito com maestria por Stephen King, este livro transporta os leitores para um universo onde as lâminas contam histórias e os guerreiros carregam o peso de suas memórias e histórias, histórias nas quais nem mesmo o tempo pode apagar.'
+        prDois.textContent = 'Na trama, somos apresentados a Eren Tagaryen, um destemido guerreiro argardiano cujo destino se entrelaça com segredos ancestrais e um artefato lendário: a espada Vralines, forjada com as escamas de Balerion. À medida que a história se desenrola, descobrimos os mistérios enterrados no passado de Eren, enquanto ele embarca em uma jornada épica para desvendar o poder e o propósito dessa arma única.'
+        prTres.textContent = 'A narrativa habilmente mescla elementos de fantasia e emoção, mergulhando os leitores em batalhas épicas e lendárias, alianças improváveis e reviravoltas surpreendentes. O mundo meticulosamente construído por tephené habitado por personagens complexos e cativantes, cada um contribuindo para a trama de maneiras que desafiam as expectativas e surpreendem os leitores a cada página, capítulo e palavra.'
         precoBest.textContent = 'R$199,99'
 
         document.getElementById("genero").textContent = "Gênero: Ação / Fantasia/ Ficção";
