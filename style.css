@@ -479,23 +479,24 @@ section.paralax{
 /*===REVIEW===*/
 
 .review-slide .slide{
-    width: 35rem;
     border-radius: .5rem;
-    background-color: yellow;
+    background-color: var(--border-color);
     padding: 2rem;
-    margin-bottom: 4rem;
+    margin: 2rem .5rem;
+    user-select: none;
 }
 
 .review-slide .slide p{
     line-height: 2;
     font-size: 1rem;
-    color: green;
+    color: black;
 }
 
 .review-slide .slide .user{
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    margin-top: .6rem;
 }
 
 .review-slide .slide .user img{
@@ -503,5 +504,19 @@ section.paralax{
     width: 7rem;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.review-slide .slide .user h3{
+    font-size: 2rem;
+    color: white;
+}
+
+.review-slide .slide .user .stars i{
+    font-size: 1.5rem;
+    color: var(--first-color);
+}
+
+.review-area h1{
+    text-align: center;
 }
 
