@@ -482,7 +482,7 @@ section.paralax{
     border-radius: .5rem;
     background-color: var(--border-color);
     padding: 2rem;
-    margin: 2rem .5rem;
+    margin: 2rem .1rem;
     user-select: none;
 }
 
